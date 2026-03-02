@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="zh" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="zh" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -13,14 +10,21 @@
         <link rel="canonical" href="https://kubean-io.github.io/kubean/zh/usage/upgrade/">
       
       
-        <link rel="prev" href="../scale_controlplane/">
+        <link rel="prev" href="../scale_worknode/">
       
       
         <link rel="next" href="../uninstall/">
       
       
+        
+          <link rel="alternate" href="/kubean/en/" hreflang="en">
+        
+          <link rel="alternate" href="/kubean/zh/" hreflang="zh">
+        
+      
+      
       <link rel="icon" href="../../assets/images/kubean_logo_1.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
@@ -28,10 +32,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -45,7 +49,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CSource+Sans+Pro:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CSource+Sans+Pro:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Source Sans Pro"}</style>
       
     
@@ -56,17 +60,17 @@
 
     
     
-    
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -108,7 +112,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -133,20 +137,20 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
       </label>
     
   
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="amber" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
       </label>
     
   
@@ -161,7 +165,7 @@
   <div class="md-select">
     
     <button class="md-header__button md-icon" aria-label="选择当前语言">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
@@ -188,7 +192,7 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -197,15 +201,15 @@
       <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="查找">
         
         <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -231,7 +235,7 @@
         <a href="https://github.com/kubean-io/kubean" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"></path></svg>
   </div>
   <div class="md-source__repository">
     kubean-io/kubean
@@ -255,7 +259,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -276,7 +280,7 @@
       <a href="https://github.com/kubean-io/kubean" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"></path></svg>
   </div>
   <div class="md-source__repository">
     kubean-io/kubean
@@ -298,9 +302,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     简介
+  
+
     
   </span>
+  
   
 
       </a>
@@ -323,7 +332,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -331,9 +340,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     快速入门
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -342,7 +356,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            快速入门
+            
+  
+    快速入门
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -358,9 +376,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     安装 kubean helm 应用
+  
+
     
   </span>
+  
   
 
       </a>
@@ -381,9 +404,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     多合一模式最小化部署集群
+  
+
     
   </span>
+  
   
 
       </a>
@@ -404,9 +432,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     使用加速模式部署集群
+  
+
     
   </span>
+  
   
 
       </a>
@@ -437,7 +470,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -445,9 +478,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     功能架构
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -456,7 +494,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            功能架构
+            
+  
+    功能架构
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -472,9 +514,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Kubean 基础架构
+  
+
     
   </span>
+  
   
 
       </a>
@@ -495,9 +542,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     对比参考
+  
+
     
   </span>
+  
   
 
       </a>
@@ -518,9 +570,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     CRD 概述
+  
+
     
   </span>
+  
   
 
       </a>
@@ -541,9 +598,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     自定义 Action
+  
+
     
   </span>
+  
   
 
       </a>
@@ -564,9 +626,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     离线安装包的原理
+  
+
     
   </span>
+  
   
 
       </a>
@@ -607,9 +674,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     用户指南
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -618,7 +690,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            用户指南
+            
+  
+    用户指南
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -634,9 +710,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     以 SSH 密钥方式部署集群
+  
+
     
   </span>
+  
   
 
       </a>
@@ -657,9 +738,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     以非 root 用户部署集群
+  
+
     
   </span>
+  
   
 
       </a>
@@ -680,32 +766,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     集群工作节点扩缩容
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../scale_controlplane/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    集群控制平面扩缩容
-    
-  </span>
   
 
       </a>
@@ -735,9 +803,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     集群版本升级
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -748,9 +821,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     集群版本升级
+  
+
     
   </span>
+  
   
 
       </a>
@@ -773,7 +851,9 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 新增升级任务
+      
+        1. 新增升级任务
+      
     </span>
   </a>
   
@@ -782,7 +862,9 @@
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 指定集群升级版本
+      
+        2. 指定集群升级版本
+      
     </span>
   </a>
   
@@ -791,7 +873,9 @@
         <li class="md-nav__item">
   <a href="#3-upgrade" class="md-nav__link">
     <span class="md-ellipsis">
-      3.应用 upgrade 文件下所有的配置
+      
+        3.应用 upgrade 文件下所有的配置
+      
     </span>
   </a>
   
@@ -818,9 +902,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     集群卸载
+  
+
     
   </span>
+  
   
 
       </a>
@@ -841,9 +930,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     离线场景的使用
+  
+
     
   </span>
+  
   
 
       </a>
@@ -864,9 +958,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     增量离线包的生成和使用
+  
+
     
   </span>
+  
   
 
       </a>
@@ -897,7 +996,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -905,9 +1004,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     开发指南
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -916,7 +1020,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            开发指南
+            
+  
+    开发指南
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -932,9 +1040,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Kubean 路线图
+  
+
     
   </span>
+  
   
 
       </a>
@@ -965,7 +1078,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -973,9 +1086,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Releases
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -984,2140 +1102,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Releases
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/artifacts/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Artifacts
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
             
   
-  
-  <span class="md-ellipsis">
     Releases
-    
-  </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_2">
-            <span class="md-nav__icon md-icon"></span>
-            Releases
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.32.4/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.32.4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.32.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.32.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.32.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.32.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.32.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.32.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.32.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.32.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.31.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.31.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.30.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.30.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.30.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.30.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.30.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.30.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.29.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.29.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.29.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.29.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.28.5/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.28.5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.28.4/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.28.4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.28.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.28.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.28.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.28.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.28.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.28.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.28.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.28.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.27.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.27.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.27.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.27.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.27.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.27.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.27.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.27.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.26.4/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.26.4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.26.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.26.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.26.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.26.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.26.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.26.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.26.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.26.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.25.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.25.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.25.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.25.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.25.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.25.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.24.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.24.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.24.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.24.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.24.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.24.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.23.9/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.23.9
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.23.8/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.23.8
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.23.7/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.23.7
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.23.6/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.23.6
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.23.5/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.23.5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.23.4/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.23.4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.23.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.23.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.23.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.23.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.23.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.23.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.23.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.23.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.22.5/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.22.5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.22.4/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.22.4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.22.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.22.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.22.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.22.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.22.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.22.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.22.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.22.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.21.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.21.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.21.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.21.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.20.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.20.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.19.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.19.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.18.5/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.18.5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.18.4/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.18.4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.18.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.18.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.18.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.18.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.18.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.18.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.18.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.18.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.17.5/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.17.5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.17.4/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.17.4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.17.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.17.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.17.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.17.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.17.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.17.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.17.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.17.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.16.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.16.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.16.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.16.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.16.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.16.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.16.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.16.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.15.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.15.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.15.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.15.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.15.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.15.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.15.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.15.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.14.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.14.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.11/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.11
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.10/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.10
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.9/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.9
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.8/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.8
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.7/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.7
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.6/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.6
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.5/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.5
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.4/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.13.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.13.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.12.3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.12.3
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.12.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.12.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.12.1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.12.1
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.12.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.12.0
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/v0.11.2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    V0.11.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -3131,9 +1122,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.11.1
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3154,9 +1150,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.11.0
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3177,9 +1178,70 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.10.0
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/v0.9.4-rc2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    V0.9.4 rc2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/v0.9.4-rc1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    V0.9.4 rc1
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -3200,9 +1262,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.9.3
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3223,9 +1290,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.9.2
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3246,9 +1318,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.9.1
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3269,9 +1346,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.9.0
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3292,9 +1374,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.8.5
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3315,9 +1402,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.8.4
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3338,9 +1430,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.8.3
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3361,9 +1458,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.8.2
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3384,9 +1486,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.8.1
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3407,9 +1514,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.8.0
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3430,9 +1542,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.7.4
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3453,9 +1570,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.7.3
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3476,9 +1598,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.7.2
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3499,9 +1626,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.7.1
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3522,9 +1654,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.7.0
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3545,9 +1682,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.6.6
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3568,9 +1710,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.6.5
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3591,9 +1738,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.6.4
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3614,9 +1766,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.6.3
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3637,9 +1794,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.6.2
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3660,9 +1822,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.6.1
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3683,9 +1850,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.6.0
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3706,9 +1878,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.5.4
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3729,9 +1906,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.5.3
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3752,9 +1934,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.5.2
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3775,9 +1962,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.5.1
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3798,9 +1990,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.5.0
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3821,9 +2018,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.4.10
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3844,9 +2046,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.4.9
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3867,9 +2074,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.4.8
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3890,9 +2102,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.4.7
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3913,9 +2130,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.4.6
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3936,9 +2158,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.4.5
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3959,9 +2186,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.4.4
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3982,9 +2214,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.4.3
+  
+
     
   </span>
+  
   
 
       </a>
@@ -4005,9 +2242,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.4.2
+  
+
     
   </span>
+  
   
 
       </a>
@@ -4028,9 +2270,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.4.1
+  
+
     
   </span>
+  
   
 
       </a>
@@ -4051,9 +2298,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     V0.4.0
+  
+
     
   </span>
+  
   
 
       </a>
@@ -4062,9 +2314,29 @@
 
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Artifacts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -4085,7 +2357,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -4106,7 +2378,9 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 新增升级任务
+      
+        1. 新增升级任务
+      
     </span>
   </a>
   
@@ -4115,7 +2389,9 @@
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 指定集群升级版本
+      
+        2. 指定集群升级版本
+      
     </span>
   </a>
   
@@ -4124,7 +2400,9 @@
         <li class="md-nav__item">
   <a href="#3-upgrade" class="md-nav__link">
     <span class="md-ellipsis">
-      3.应用 upgrade 文件下所有的配置
+      
+        3.应用 upgrade 文件下所有的配置
+      
     </span>
   </a>
   
@@ -4140,6 +2418,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -4149,7 +2428,7 @@
   
 
 
-<h1 id="_1">集群版本升级<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="_1">集群版本升级<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
 <p>本节将向您介绍如何使用 kubean 升级集群的 kubernnetes 版本。在您克隆至本地的 <code>kubean/example/upgrade</code> 文件内，同样提供了集群版本升级的样例模板：</p>
 <details open>
 <summary> upgrade 文件内主要的配置文件及用途如下：</summary>
@@ -4164,40 +2443,40 @@
 <blockquote>
 <p>注意：执行集群版本升级前，您必须已经使用 kubean 完成了一套集群的部署。</p>
 </blockquote>
-<h4 id="1">1. 新增升级任务<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<h4 id="1">1. 新增升级任务<a class="headerlink" href="#1" title="Permanent link">¶</a></h4>
 <p>进入 <code>kubean/examples/upgrade/</code> 路径，编辑模板 <code>ClusterOperation.yml</code>，将下列参数替换为您的真实参数：</p>
 <ul>
 <li><code>&lt;TAG&gt;</code>：kubean 镜像版本，推荐使用最新版本，<a href="https://github.com/kubean-io/kubean/tags">参阅 kubean 版本列表</a>。</li>
 </ul>
 <p><code>kubean/examples/upgrade/</code> 路径下 <strong><code>ClusterOperation.yml</code></strong> 的模板内容如下：</p>
-<p><div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubean.io/v1alpha1</span>
+<p></p><div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubean.io/v1alpha1</span>
 <span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterOperation</span>
 <span class="nt">metadata</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cluster-mini-upgrade-ops</span>
 <span class="nt">spec</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">cluster</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cluster-mini</span>
-<span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ghcr.m.daocloud.io/kubean-io/spray-job:&lt;TAG&gt;</span><span class="w"> </span><span class="c1"># Please replace &lt;TAG&gt; with the specified version, such as v0.26.4</span>
+<span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ghcr.m.daocloud.io/kubean-io/spray-job:&lt;TAG&gt;</span><span class="w"> </span><span class="c1"># Please replace &lt;TAG&gt; with the specified version, such as v0.4.9</span>
 <span class="w">  </span><span class="nt">actionType</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">playbook</span>
 <span class="w">  </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">upgrade-cluster.yml</span>
 </code></pre></div>
-<strong>重要参数：</strong></p>
+<strong>重要参数：</strong><p></p>
 <blockquote>
 <ul>
 <li><code>spec.cluster</code>: 指定需要升级的集群名称，上述指定的是名为 <code>cluster-mini</code> 的集群为升级目标。</li>
 <li><code>spec.action:</code> 指定升级相关的 kubespray 剧本, 这里设置为 <code>upgrade-cluster.yml</code>。</li>
 </ul>
 </blockquote>
-<h4 id="2">2. 指定集群升级版本<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
+<h4 id="2">2. 指定集群升级版本<a class="headerlink" href="#2" title="Permanent link">¶</a></h4>
 <p>进入 <code>kubean/examples/upgrade/</code> 路径，编辑模板 <code>VarsConfCM.yml</code>，通过配置 <code>kube_version</code> 参数，指定集群升级的版本。</p>
 <p><code>kubean/examples/upgrade/</code> 路径下 <strong><code>VarsConfCM.yml</code></strong> 的模板内容如下：</p>
-<p><div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<p></p><div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
 <span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConfigMap</span>
 <span class="nt">metadata</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mini-vars-conf</span>
 <span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubean-system</span>
 <span class="nt">data</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">group_vars.yml</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">kube_version: 1.25.8</span>
+<span class="w">    </span><span class="no">kube_version: v1.25.8</span>
 <span class="w">    </span><span class="no"># upgrade_cluster_setup: true</span>
 <span class="w">    </span><span class="no"># upgrade_node_confirm: true</span>
 <span class="w">    </span><span class="no"># upgrade_node_pause_seconds: 60</span>
@@ -4206,7 +2485,7 @@
 <span class="w">    </span><span class="no">kube_network_plugin: calico</span>
 <span class="w">    </span><span class="no">etcd_deployment_type: kubeadm</span>
 </code></pre></div>
-<strong>重要参数：</strong></p>
+<strong>重要参数：</strong><p></p>
 <blockquote>
 <ul>
 <li><code>kube_version</code>: 指定需要升级的集群版本, 上述指定了要升级到 k8s v1.25.8 版本。</li>
@@ -4214,7 +2493,7 @@
 </blockquote>
 <div class="admonition 升级集群版本参数的示例">
 <p class="admonition-title">升级集群版本参数的示例</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">升级版本前</label><label for="__tabbed_1_2">升级版本后</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">升级版本前</label><label for="__tabbed_1_2">升级版本后</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
@@ -4224,7 +2503,7 @@
 <span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubean-system</span>
 <span class="nt">data</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">group_vars.yml</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">kube_version: 1.25.0</span>
+<span class="w">    </span><span class="no">kube_version: v1.25.0</span>
 <span class="w">    </span><span class="no"># upgrade_cluster_setup: true</span>
 <span class="w">    </span><span class="no"># upgrade_node_confirm: true</span>
 <span class="w">    </span><span class="no"># upgrade_node_pause_seconds: 60</span>
@@ -4242,7 +2521,7 @@
 <span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubean-system</span>
 <span class="nt">data</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">group_vars.yml</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-<span class="w">    </span><span class="no">kube_version: 1.25.8</span>
+<span class="w">    </span><span class="no">kube_version: v1.25.8</span>
 <span class="w">    </span><span class="no"># upgrade_cluster_setup: true</span>
 <span class="w">    </span><span class="no"># upgrade_node_confirm: true</span>
 <span class="w">    </span><span class="no"># upgrade_node_pause_seconds: 60</span>
@@ -4268,12 +2547,12 @@
 <tr>
 <td>v0.5.2</td>
 <td>v1.25.4</td>
-<td>- "v1.27.2"<br/>        - "v1.26.5"<br/>        - "v1.26.4"<br/>        - "v1.26.3"<br/>        - "v1.26.2"<br/>        - "v1.26.1"<br/>        - "v1.26.0"<br/>        - "v1.25.10"<br/>        - "v1.25.9"<br/>        - "v1.25.8"<br/>        - "v1.25.7"<br/>        - "v1.25.6"<br/>        - "v1.25.5"<br/>        - "v1.25.4"<br/>        - "v1.25.3"<br/>        - "v1.25.2"<br/>        - "v1.25.1"<br/>        - "v1.25.0"</td>
+<td>- "v1.27.2"<br>        - "v1.26.5"<br>        - "v1.26.4"<br>        - "v1.26.3"<br>        - "v1.26.2"<br>        - "v1.26.1"<br>        - "v1.26.0"<br>        - "v1.25.10"<br>        - "v1.25.9"<br>        - "v1.25.8"<br>        - "v1.25.7"<br>        - "v1.25.6"<br>        - "v1.25.5"<br>        - "v1.25.4"<br>        - "v1.25.3"<br>        - "v1.25.2"<br>        - "v1.25.1"<br>        - "v1.25.0"</td>
 </tr>
 </tbody>
 </table>
 <p>更多升级操作参数的详细说明，请参考 kubespray 文档：<a href="https://github.com/kubernetes-sigs/kubespray/blob/master/docs/upgrades.md">通过Kubespray 更新 kubernetes</a>。</p>
-<h4 id="3-upgrade">3.应用 <code>upgrade</code> 文件下所有的配置<a class="headerlink" href="#3-upgrade" title="Permanent link">&para;</a></h4>
+<h4 id="3-upgrade">3.应用 <code>upgrade</code> 文件下所有的配置<a class="headerlink" href="#3-upgrade" title="Permanent link">¶</a></h4>
 <p>完成上述步骤并保存 ClusterOperation.yml 和 VarsConfCM.yml 文件后，执行如下命令：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>examples/upgrade/
 </code></pre></div>
@@ -4306,20 +2585,20 @@
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+      <nav class="md-footer__inner md-grid" aria-label="页脚">
         
           
-          <a href="../scale_controlplane/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 集群控制平面扩缩容">
+          <a href="../scale_worknode/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 集群工作节点扩缩容">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 上一页
               </span>
               <div class="md-ellipsis">
-                集群控制平面扩缩容
+                集群工作节点扩缩容
               </div>
             </div>
           </a>
@@ -4337,7 +2616,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -4363,13 +2642,14 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
