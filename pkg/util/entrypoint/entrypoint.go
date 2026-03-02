@@ -116,7 +116,9 @@ func (ep *EntryPoint) buildPlaybookCmd(action, extraArgs string, isPrivateKey, b
 		}
 	}
 
-	playbookCmd := "ansible-playbook -i /dev/fd/200 -b --become-user root -e \"@/conf/group_vars.yml\""
+    // Use a concrete inventory file prepared by prerequisites
+    const inventoryPath = "/kubespray/inventory/inventory.200"
+    playbookCmd := fmt.Sprintf("ansible-playbook -i %s -b --become-user root -e \"@/conf/group_vars.yml\"", inventoryPath)
 	if isPrivateKey {
 		playbookCmd = fmt.Sprintf("%s --private-key /auth/ssh-privatekey", playbookCmd)
 	}

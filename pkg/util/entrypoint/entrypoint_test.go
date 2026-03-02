@@ -356,7 +356,7 @@ func TestEntryPoint_buildPlaybookCmd(t *testing.T) {
 				action:       ResetPB,
 				isPrivateKey: true,
 			},
-			want: "ansible-playbook -i /dev/fd/200 -b --become-user root -e \"@/conf/group_vars.yml\" --private-key /auth/ssh-privatekey -e \"reset_confirmation=yes\" /kubespray/reset.yml",
+    want: "ansible-playbook -i /kubespray/inventory/inventory.200 -b --become-user root -e \"@/conf/group_vars.yml\" --private-key /auth/ssh-privatekey -e \"reset_confirmation=yes\" /kubespray/reset.yml",
 		},
 		{
 			name:    "test extra args case",
@@ -375,7 +375,7 @@ func TestEntryPoint_buildPlaybookCmd(t *testing.T) {
 				action:       ResetPB,
 				extraArgs:    "-e \"reset_confirmation=yes\"",
 			},
-			want: "ansible-playbook -i /dev/fd/200 -b --become-user root -e \"@/conf/group_vars.yml\" --private-key /auth/ssh-privatekey -e \"reset_confirmation=yes\" /kubespray/reset.yml -e \"reset_confirmation=yes\"",
+    want: "ansible-playbook -i /kubespray/inventory/inventory.200 -b --become-user root -e \"@/conf/group_vars.yml\" --private-key /auth/ssh-privatekey -e \"reset_confirmation=yes\" /kubespray/reset.yml -e \"reset_confirmation=yes\"",
 		},
 	}
 	for _, tt := range tests {
@@ -450,7 +450,7 @@ func Test_entryPoint_hookRunPart(t *testing.T) {
 				isPrivateKey: true,
 			},
 			wantErr: false,
-			want:    "ansible-playbook -i /dev/fd/200 -b --become-user root -e \"@/conf/group_vars.yml\" --private-key /auth/ssh-privatekey -e \"reset_confirmation=yes\" /kubespray/reset.yml",
+            want:    "ansible-playbook -i /kubespray/inventory/inventory.200 -b --become-user root -e \"@/conf/group_vars.yml\" --private-key /auth/ssh-privatekey -e \"reset_confirmation=yes\" /kubespray/reset.yml",
 		},
 		{
 			name: "test shell action case",

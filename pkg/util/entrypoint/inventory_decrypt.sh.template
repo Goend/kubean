@@ -24,8 +24,14 @@ if [ -n "$VAULT_PRIVATE_KEY" ]; then
       yq -i ".all.hosts.$host.$field = \"$decrypted_field\"" $HOSTS_FILE
     done
   done
+  # Create target inventory file and copy the prepared hosts
+  : > /kubespray/inventory/inventory.200
+  cp "$HOSTS_FILE" "/kubespray/inventory/inventory.200"
   exec 200< $HOSTS_FILE
   rm -f $HOSTS_FILE
 else
+  # Create target inventory file and copy the prepared hosts
+  : > /kubespray/inventory/inventory.200
+  cp "$HOSTS_FILE" "/kubespray/inventory/inventory.200"
   exec 200< $HOSTS_FILE
 fi
