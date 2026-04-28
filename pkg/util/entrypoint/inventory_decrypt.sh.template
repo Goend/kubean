@@ -25,13 +25,13 @@ if [ -n "$VAULT_PRIVATE_KEY" ]; then
     done
   done
   # Create target inventory file and copy the prepared hosts
-  : > /kubespray/inventory/inventory.200
-  cp "$HOSTS_FILE" "/kubespray/inventory/inventory.200"
+  : > /kubespray/inventory/inventory.200.yml
+  cp "$HOSTS_FILE" "/kubespray/inventory/inventory.200.yml"
   exec 200< $HOSTS_FILE
   rm -f $HOSTS_FILE
 else
   # Create target inventory file and copy the prepared hosts
-  : > /kubespray/inventory/inventory.200
-  cp "$HOSTS_FILE" "/kubespray/inventory/inventory.200"
+  : > /kubespray/inventory/inventory.200.yml
+  cp "$HOSTS_FILE" "/kubespray/inventory/inventory.200.yml"
   exec 200< $HOSTS_FILE
 fi

@@ -18,12 +18,13 @@ const (
 	PBAction = "playbook"
 	SHAction = "shell"
 
-	FactsPB          = "facts.yml"
-	ResetPB          = "reset.yml"
-	ScalePB          = "scale.yml"
-	ClusterPB        = "cluster.yml"
-	RemoveNodePB     = "remove-node.yml"
-	UpgradeClusterPB = "upgrade-cluster.yml"
+	FactsPB              = "facts.yml"
+	ResetPB              = "reset.yml"
+	ScalePB              = "scale.yml"
+	ClusterPB            = "cluster.yml"
+	RemoveNodePB         = "remove-node.yml"
+	UpgradeClusterPB     = "upgrade-cluster.yml"
+	UpgradeEtcdClusterPB = "extra_playbooks/upgrade-etcd-k8s.yml"
 
 	PingPB        = "ping.yml"
 	RepoPB        = "enable-repo.yml"
@@ -77,7 +78,7 @@ func NewActions() *Actions {
 		RemovePkgsPB, PreCheckPB, RenewCertsPB,
 		KubeVipConfigPB, ConfigInsecureRegistryPB, NfConntrackPB, MountXFSPquotaPB,
 		SetContainerdRegistryMirror, DisableKernelUnattendedUpgrade, ConfigDockerCgroupDriverForKylinSP2,
-		EnsureKubeResolvConfPB, Rh8Compat, StripKylinVersion,
+		EnsureKubeResolvConfPB, Rh8Compat, StripKylinVersion, UpgradeEtcdClusterPB,
 	}
 	actions.Playbooks.Dict = map[string]void{}
 	for _, pbItem := range actions.Playbooks.List {
@@ -116,9 +117,9 @@ func (ep *EntryPoint) buildPlaybookCmd(action, extraArgs string, isPrivateKey, b
 		}
 	}
 
-    // Use a concrete inventory file prepared by prerequisites
-    const inventoryPath = "/kubespray/inventory/inventory.200"
-    playbookCmd := fmt.Sprintf("ansible-playbook -i %s -b --become-user root -e \"@/conf/group_vars.yml\"", inventoryPath)
+	// Use a concrete inventory file prepared by prerequisites
+	const inventoryPath = "/kubespray/inventory/inventory.200.yml"
+	playbookCmd := fmt.Sprintf("ansible-playbook -i %s -b --become-user root -e \"@/conf/group_vars.yml\"", inventoryPath)
 	if isPrivateKey {
 		playbookCmd = fmt.Sprintf("%s --private-key /auth/ssh-privatekey", playbookCmd)
 	}
