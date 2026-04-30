@@ -137,7 +137,7 @@ func (c *Controller) CleanExcessClusterOps(cluster *clusterv1alpha1.Cluster, Ops
 
 	excessClusterOpsList := clusterOpsList.Items[OpsBackupNum:]
 	for _, item := range excessClusterOpsList {
-		if item.Status.Status == clusteroperationv1alpha1.RunningStatus { // keep running job
+		if item.Status.Status != clusteroperationv1alpha1.SucceededStatus { // keep running job and failed job
 			continue
 		}
 		klog.Warningf("Delete ClusterOperation: name: %s, createTime: %s, status: %s", item.Name, item.CreationTimestamp.String(), item.Status.Status)
